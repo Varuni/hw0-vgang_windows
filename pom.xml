@@ -3,9 +3,8 @@
 
 	<groupId>edu.cmu.lti.11791.f12.hw0</groupId>
 	<artifactId>hw0-vgang</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<version>0.0.7-SNAPSHOT</version>
 	<name>hw0-vgang</name>
 	<url>http://maven.apache.org</url>
 
