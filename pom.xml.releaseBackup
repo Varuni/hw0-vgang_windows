@@ -1,16 +1,17 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<groupId>edu.cmu.lti.11791.f12.hw0</groupId>
 	<artifactId>hw0-vgang</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>hw0-vgang</name>
 	<url>http://maven.apache.org</url>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -28,10 +29,13 @@
 		<connection>scm:git:git@github.com:Varuni/hw0-vgang.git</connection>
 		<developerConnection>scm:git:git@github.com:Varuni/hw0-vgang.git</developerConnection>
 	</scm>
-	<repositories><repository>
+
+	<repositories>
+		<repository>
 			<id>deployment</id>
 			<url>http://mu.lti.cs.cmu.edu:8081/nexus/content/groups/course</url>
-	</repository></repositories>
+		</repository>
+	</repositories>
 	<distributionManagement>
 		<repository>
 			<id>deployment</id>
@@ -42,25 +46,33 @@
 			<url>http://mu.lti.cs.cmu.edu:8081/nexus/content/repositories/course-snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
-	<build><plugins>
-		<plugin>
+	<build>
+		<plugins>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.6</source><target>1.6</target>
+					<source>1.6</source>
+					<target>1.6</target>
 				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.2.1</version>
-				<executions><execution>
+				<executions>
+					<execution>
 						<id>default</id>
-						<goals><goal>perform</goal></goals>
+						<goals>
+							<goal>perform</goal>
+						</goals>
 						<configuration>
 							<pomFileName>hw0-vgang/pom.xml</pomFileName>
 						</configuration>
-					</execution></executions>
+					</execution>
+				</executions>
 			</plugin>
-		</plugins></build>
+		</plugins>
+	</build>
+
 </project>
