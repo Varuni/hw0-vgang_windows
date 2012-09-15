@@ -5,7 +5,7 @@
 	<artifactId>hw0-vgang</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
-
+	<version>0.0.7-SNAPSHOT</version>
 	<name>hw0-vgang</name>
 	<url>http://maven.apache.org</url>
 
